@@ -6,6 +6,7 @@
     "dev": "vitepress dev docs"
   },
   "devDependencies": {
+    "@types/node": "^20.14.1",
     "js-yaml": "^4.1.0",
     "vitepress": "^1.2.3"
   }

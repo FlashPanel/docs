@@ -21,7 +21,10 @@ export default defineConfig({
             link: "/",
             themeConfig: {
                 sidebar: [
-                    { text: `${loadedData.name} là gì?`, link: "/vi/what-is-flash-panel" },
+                    {
+                        text: `${loadedData.name} là gì?`,
+                        link: "/vi/what-is-flash-panel",
+                    },
                     {
                         text: "Kết nối",
                         items: buildItems(join(__dirname, "../vi/connect")),
@@ -80,6 +83,9 @@ export default defineConfig({
                 apiKey: "0868a5afcd71904b8822987e3b92a099",
                 indexName: "flashvps",
             },
+        },
+        editLink: {
+            pattern: "https://github.com/FlashPanel/docs/edit/main/docs/:path",
         },
     },
     head: [
