@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "flashpanel",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.2.3"
+  },
+  "dependencies": {}
+}
