@@ -3,10 +3,10 @@
   "name": "flashpanel",
   "type": "module",
   "scripts": {
-    "docs:dev": "vitepress dev docs"
+    "dev": "vitepress dev docs"
   },
   "devDependencies": {
+    "js-yaml": "^4.1.0",
     "vitepress": "^1.2.3"
-  },
-  "dependencies": {}
+  }
 }
