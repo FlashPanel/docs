@@ -1,0 +1,6 @@
+{
+  "markdown.copyFiles.destination": {
+    "/docs/**/*": "/docs/images/${documentRelativeDirName}/${documentBaseName}/"
+  },
+  "markdown.updateLinksOnFileMove.enabled": "always"
+}
