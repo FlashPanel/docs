@@ -34,3 +34,9 @@ curl 'http://localhost:8108/keys' \
 
 ## Truy cập typesense vơi domain
 
+
+sau nay anh sua file nay, xong save lai
+
+la ben github desk top no bao co thay doi
+
+bam commit
