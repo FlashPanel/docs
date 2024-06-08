@@ -127,17 +127,17 @@ Bạn điền thông tin như sau:
     - PROTOCOL: chọn `http`
     - ENTER NODE URI: nhập `127.0.0.1`
     - ENTER PORT: nhập `80`
-    - ADMIN API KEY và SEARCH API KEY: nhập `MASTER API Key` hoặc [tạo `Admin Api Key` và `Search Only Api Key`](#123)
+    - ADMIN API KEY và SEARCH API KEY: nhập `MASTER API Key` hoặc [tạo `Admin Api Key` và `Search Only Api Key`](##tao-api-key)
 2. Trường hợp Typesense Server và WordPress khác máy chủ và dùng `ip:port`
     - PROTOCOL: chọn `http`
     - ENTER NODE URI: nhập `ip_máy_chủ`
     - ENTER PORT: nhập `8108`
-    - ADMIN API KEY và SEARCH API KEY: nhập `MASTER API Key` hoặc [tạo `Admin Api Key` và `Search Only Api Key`](#123)
+    - ADMIN API KEY và SEARCH API KEY: nhập `MASTER API Key` hoặc [tạo `Admin Api Key` và `Search Only Api Key`](##tao-api-key)
 3. Trường hợp Typesense Server và WordPress khác máy chủ và dùng `domain`
     - PROTOCOL: chọn `https`
     - ENTER NODE URI: nhập `domain` khi tạo website ở trên
     - ENTER PORT: nhập `443`
-    - ADMIN API KEY và SEARCH API KEY: nhập `MASTER API Key` hoặc [tạo `Admin Api Key` và `Search Only Api Key`](#123)
+    - ADMIN API KEY và SEARCH API KEY: nhập `MASTER API Key` hoặc [tạo `Admin Api Key` và `Search Only Api Key`](##tao-api-key)
       nhập MASTER API Key vào (cái này mình sẽ nói thêm ở phần sau)
 
 Xong bạn nhấp vào "Save"
