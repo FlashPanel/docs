@@ -69,7 +69,10 @@ export default defineConfig({
     },
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
-        nav: [{ text: "Home", link: loadedData.url }],
+        nav: [
+            { text: "Home", link: loadedData.url },
+            { text: "API", link: `${loadedData.url}/docs/api` },
+        ],
 
         socialLinks: [{ icon: "facebook", link: loadedData.fbGroup }],
 
