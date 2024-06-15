@@ -52,7 +52,7 @@ Typesense Server là một lựa chọn lý tưởng cho các nhà phát triển
 ## Cài đặt Typesense Server trên {{ data.name }}
 
 ::: info
-Trước tiên bạn cần 1 server mới tinh kết nối với FlashPanel (chỉ cần cài `Nginx`, mấy cái khác không cần). Thực ra bạn có thể dùng chung server hiện tại với website, tuy nhiên mình nghĩ các bạn nên tách ra riêng, để dễ quản lý và có lỗi gì thì cũng không bị lỗi cả 2
+Trước tiên bạn cần 1 server mới tinh kết nối với {{ data.name }} (chỉ cần cài `Nginx`, mấy cái khác không cần). Thực ra bạn có thể dùng chung server hiện tại với website, tuy nhiên mình nghĩ các bạn nên tách ra riêng, để dễ quản lý và có lỗi gì thì cũng không bị lỗi cả 2
 :::
 
 Vào tab `Ứng dụng` của máy chủ, tìm đến ứng dụng `Typesense Server` và bấm cài đặt
