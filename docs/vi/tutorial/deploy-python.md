@@ -1,9 +1,13 @@
-# Hướng dẫn triển khai ứng dụng Python/Flask
+# Deploy Python/Flask App
 
 ## Cài đặt Python, pip và các gói cần thiết khác
 
+Mở terminal dành cho `root` user, chạy lệnh cài Python venv, chỉ chạy 1 lần nếu đây là lần đầu tiên bạn Deploy Python/Flask App
+
+![](<../../images/docs/vi/tutorial/deploy-python/Screenshot 2024-06-16 at 14.14.53.png>)
+
 ```bash
-sudo apt install python3 python3-pip python3-venv -y
+sudo apt install python3-venv -y
 ```
 
 ## Tạo website
@@ -16,7 +20,9 @@ Trỏ DNS website về máy chủ và [cài SSL](../site/ssl.md)
 
 ## Tạo môi trường ảo
 
-Thiết lập một môi trường ảo và kích hoạt nó:
+Mở terminal dành cho site, chạy lệnh thiết lập một môi trường ảo và kích hoạt nó:
+
+![](<../../images/docs/vi/tutorial/deploy-python/Screenshot 2024-06-16 at 14.19.57.png>)
 
 ```bash
 python3 -m venv venv
@@ -24,6 +30,8 @@ source venv/bin/activate
 ```
 
 ## Cài đặt phụ thuộc ứng dụng
+
+Nếu bạn có file `requirements.txt` ở trong mã nguồn thì dùng lệnh dưới đây, còn không thì cài các gói thủ công
 
 ```bash
 pip install -r requirements.txt
@@ -41,7 +49,7 @@ Gunicorn (Green Unicorn) là một HTTP server WSGI (Web Server Gateway Interfac
 pip install gunicorn
 ```
 
-### 7. Test Your Application
+### Test Your Application
 
 Chạy ứng dụng của bạn để đảm bảo nó hoạt động:
 
@@ -65,62 +73,34 @@ Gunicorn sẽ:
 2. Tìm đối tượng Flask được định nghĩa là `app`.
 3. Chạy ứng dụng Flask bằng Gunicorn, lắng nghe trên tất cả các địa chỉ IP (`0.0.0.0`) ở cổng `1406`.
 
-### 9. Set Up a Systemd Service for Gunicorn
+### Thiết lập dịch vụ Systemd
 
-Create a systemd service file for your app:
+Sử dụng tính năng [quản lý Systemd Service](../server/service.md) để chạy gunicorn mà không cần phải giữ terminal.
 
-```bash
-sudo nano /etc/systemd/system/myapp.service
-```
-
-Add the following content:
+Cấu hình tham khảo như sau:
 
 ```ini
 [Unit]
-Description=Gunicorn instance to serve myapp
+Description=domain.com web application
 After=network.target
 
 [Service]
-User=your_user
-Group=www-data
-WorkingDirectory=/path/to/your/myapp
-Environment="PATH=/path/to/your/myapp/venv/bin"
-ExecStart=/path/to/your/myapp/venv/bin/gunicorn --workers 3 --bind unix:myapp.sock -m 007 app:app
+User=flashvps
+WorkingDirectory=/home/flashvps/domain.com
+Environment="PATH=/home/flashvps/domain.com/venv/bin"
+ExecStart=/home/flashvps/domain.com/venv/bin/gunicorn --workers 3 --bind 0.0.0.0:1406 app:app
 
 [Install]
 WantedBy=multi-user.target
 ```
 
-Start and enable the service:
+::: warning
 
-```bash
-sudo systemctl start myapp
-sudo systemctl enable myapp
-```
+1. Bạn nên thay `/home/flashvps/domain.com` thành đường dẫn đến thư mục website tương ứng của bạn.
+2. `--workers 3`: Tùy chọn này chỉ định số lượng worker processes Gunicorn sẽ sử dụng. Ở đây, nó được cấu hình để sử dụng 3 worker processes. Worker processes giúp Gunicorn xử lý nhiều yêu cầu đồng thời, cải thiện hiệu suất của ứng dụng.
 
-### 10. Adjust Nginx Configuration for Unix Socket
+3. `--bind 0.0.0.0:1406`: Tùy chọn này chỉ định địa chỉ IP và cổng mà Gunicorn sẽ lắng nghe. `0.0.0.0` có nghĩa là lắng nghe trên tất cả các địa chỉ IP của máy chủ, và `1406` là cổng sẽ được sử dụng. Điều này cho phép ứng dụng có thể truy cập từ bất kỳ địa chỉ IP nào trên cổng `1406`.
 
-Update the Nginx configuration to use the Unix socket:
+:::
 
-```nginx
-server {
-    listen 80;
-    server_name your_domain_or_IP;
-
-    location / {
-        proxy_pass http://unix:/path/to/your/myapp/myapp.sock;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
-}
-```
-
-Restart Nginx:
-
-```bash
-sudo systemctl restart nginx
-```
-
-Your Python app should now be deployed and accessible via your server’s IP address or domain.
+Ứng dụng Python của bạn bây giờ sẽ được triển khai và có thể truy cập được thông qua địa chỉ IP hoặc miền của máy chủ của bạn.
