@@ -1,4 +1,18 @@
+---
+head:
+    - - meta
+      - name: description
+        content: Hướng dẫn deploy website ASP.NET
+---
+
+<script setup>
+import { data } from '../../.vitepress/config.data.ts'
+import OgImage from '../../.vitepress/components/OgImage.vue'
+</script>
+
 # Deploy ASP.NET website
+
+<OgImage name="Deploy ASP.NET website" />
 
 <!-- https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-8.0&tabs=linux-ubuntu -->
 

@@ -1,4 +1,18 @@
+---
+head:
+    - - meta
+      - name: description
+        content: Hướng dẫn deploy Python/Flask App
+---
+
+<script setup>
+import { data } from '../../.vitepress/config.data.ts'
+import OgImage from '../../.vitepress/components/OgImage.vue'
+</script>
+
 # Deploy Python/Flask App
+
+<OgImage name="# Deploy Python/Flask App" />
 
 ## Cài đặt Python, pip và các gói cần thiết khác
 
