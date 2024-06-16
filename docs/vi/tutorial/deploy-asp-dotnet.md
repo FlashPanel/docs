@@ -34,13 +34,11 @@ Giả sử bạn có 1 website ASP.NET muốn chạy dưới domain `domain.com`
 
 5. Tạo Service cho website
 
-    Mở File Manager cho server
+    Sử dụng tính năng [quản lý Service](../server/service.md) để tạo service
 
-    ![](<../../images/docs/vi/tutorial/deploy-asp-dotnet/Screenshot 2024-05-28 at 13.29.54.png>)
+    Tạo service có tên `domain_com` (bạn đặt domain_com hay gì tùy ý nhưng lưu ý là ngắn gọn, dễ nhớ, không có ký tự đặt biệt gì)
 
-    Tìm đến thư mục `/etc/systemd/system`
-
-    Tạo file có tên `domain_com.service` (bạn đặt domain_com hay gì tùy ý nhưng lưu ý là ngắn gọn, dễ nhớ, không có ký tự đặt biệt gì)
+    Nội dung `domain_com` bạn tham khảo dưới đây
 
     ```ini{4}
     [Unit]
@@ -74,24 +72,5 @@ Giả sử bạn có 1 website ASP.NET muốn chạy dưới domain `domain.com`
         ```
 
     :::
-
-6. Khởi động service
-
-    Mở terminal server lên và nhập lệnh sau
-
-    ![](<../../images/docs/vi/tutorial/deploy-asp-dotnet/Screenshot 2024-05-28 at 14.27.58.png>)
-
-    ```bash
-    sudo systemctl enable domain_com.service
-    sudo systemctl start domain_com.service
-    ```
-
-## Xem nhật ký
-
-Khi nãy bạn tạo file service là `domain_com.service` thì bạn chạy lệnh
-
-```bash
-sudo journalctl -fu domain_com.service
-```
 
 Truy cập website để xem kết quả thành công nhé!
