@@ -6,7 +6,7 @@ position: 1
 import { data } from '../../.vitepress/config.data.ts'
 </script>
 
-#Cookbook
+# Cookbook
 
 ## Restart PHP-FPM
 

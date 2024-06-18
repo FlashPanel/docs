@@ -2,7 +2,7 @@
 import { data } from '../../.vitepress/config.data.ts'
 </script>
 
-#Daemons
+# Daemons
 
 ## Generality
 

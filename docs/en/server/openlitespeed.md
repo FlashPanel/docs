@@ -2,7 +2,7 @@
 import { data } from '../../.vitepress/config.data.ts'
 </script>
 
-#OpenLiteSpeed
+# OpenLiteSpeed
 
 ::: info
 OpenLiteSpeed ​​is an open source web server developed and maintained by LiteSpeed ​​Technologies. It is a "lightweight" version of LiteSpeed ​​Web Server, a web server that offers high performance and powerful features.

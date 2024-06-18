@@ -13,7 +13,7 @@ head:
 import { data } from '../../.vitepress/config.data.ts'
 </script>
 
-#SSL
+# SSL
 
 {{ data.name }} supports installing custom SSL certificates and using `LetsEncrypt`, `ZeroSSL` to generate free certificates for your websites.
 
