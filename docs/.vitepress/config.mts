@@ -11,10 +11,47 @@ export default defineConfig({
     base: "/docs/v2/",
     description: "A simple way to manage your servers",
     locales: {
-        // root: {
-        //     label: "Tiếng Việt",
-        //     lang: "vi",
-        // },
+        root: {
+            label: "English",
+            lang: "en",
+        },
+        en: {
+            label: "English",
+            lang: "en",
+            link: "/",
+            themeConfig: {
+                sidebar: [
+                    {
+                        text: `What is ${loadedData.name}?`,
+                        link: "/en/what-is-flash-panel",
+                    },
+                    {
+                        text: "Connect",
+                        items: buildItems(join(__dirname, "../en/connect")),
+                    },
+                    {
+                        text: "Server",
+                        items: buildItems(join(__dirname, "../en/server")),
+                    },
+                    {
+                        text: "Website",
+                        items: buildItems(join(__dirname, "../en/site")),
+                    },
+                    {
+                        text: "User",
+                        items: buildItems(join(__dirname, "../en/user")),
+                    },
+                    {
+                        text: "Knowledge",
+                        items: buildItems(join(__dirname, "../en/knowledge")),
+                    },
+                    {
+                        text: "Tutorial",
+                        items: buildItems(join(__dirname, "../en/tutorial")),
+                    },
+                ],
+            },
+        },
         vi: {
             label: "Tiếng Việt",
             lang: "vi",
@@ -52,20 +89,6 @@ export default defineConfig({
                 ],
             },
         },
-        // en: {
-        //     label: "English",
-        //     lang: "en",
-        //     link: "/en",
-        //     themeConfig: {
-        //         sidebar: [
-        //             { text: `What is ${loadedData.name}?`, link: "/en/what-is-flash-panel" },
-        //             {
-        //                 text: "Connect",
-        //                 items: [{ text: "Connect Custom Server", link: "/en/connect-custom-server" }],
-        //             },
-        //         ],
-        //     },
-        // },
     },
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
