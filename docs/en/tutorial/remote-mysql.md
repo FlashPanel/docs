@@ -34,7 +34,7 @@ First you need to do [create SSH Key](../knowledge/ssh-keys.md#create-ssh-key) a
     3. Select `ssh.exe`
     4. SSH Host + Port: enter server IP and SSH port
     5. Username: is the Linux system username that we choose when adding the SSH Key
-       ![](<../../images/docs/en/tutorial/remote-mysql/Screenshot 2024-04-23 at 14.49.58.png>)
+       ![](<../../images/docs/vi/tutorial/remote-mysql/Screenshot 2024-04-23 at 14.49.58.png>)
     6. Private key file: is the key added in step [add SSH Key to server](../knowledge/ssh-keys.md#them-ssh-key-on-may-chu) **note: select private key is PuTTY (.ppk)**
 
 ### Instructions for using TablePlus

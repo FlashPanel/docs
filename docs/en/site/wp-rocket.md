@@ -17,9 +17,9 @@ WP Rocket is a performance optimization plugin for websites built on the WordPre
 1. Make sure the `WP Rocket` plugin is installed in WordPress Admin
    ![](<../../images/docs/vi/site/wp-rocket/Screenshot 2024-04-05 at 3.32.13.png>)
 2. Return to the `{{ data.name }}` site dashboard, click the `Nginx WordPress Rocket` tile
-   ![](<../../images/docs/en/site/wp-rocket/Screenshot 2024-04-05 at 3.45.05.png>)
+   ![](<../../images/docs/vi/site/wp-rocket/Screenshot 2024-04-05 at 3.45.05.png>)
 3. Press the `Enabe` button
-   ![](<../../images/docs/en/site/wp-rocket/Screenshot 2024-04-05 at 3.45.38.png>)
+   ![](<../../images/docs/vi/site/wp-rocket/Screenshot 2024-04-05 at 3.45.38.png>)
 4. Confirm results
 
     1. Open the browser, press `F12` to open the Development Tools panel, select the `Network` tab
@@ -42,15 +42,15 @@ To ensure your scheduled tasks run when needed, we recommend that you disable Wo
     define( 'DISABLE_WP_CRON', true );
     ```
 
-    ![](<../../images/docs/en/site/wp-rocket/Screenshot 2024-04-05 at 15.57.24.png>)
+    ![](<../../images/docs/vi/site/wp-rocket/Screenshot 2024-04-05 at 15.57.24.png>)
 
 2. Open CronJobs tab and add
    ![](<../../images/docs/vi/site/wp-rocket/Screenshot 2024-04-05 at 16.02.27.png>)
 
 3. You add the following:
-   ![](<../../images/docs/en/site/wp-rocket/Screenshot 2024-04-05 at 16.03.55.png>)
+   ![](<../../images/docs/vi/site/wp-rocket/Screenshot 2024-04-05 at 16.03.55.png>)
     - Command: `cd /home/flashvps/main3.chungnguyen.xyz; php8.2 wp-cron.php` in which `/home/flashvps/main3.chungnguyen.xyz` you change to the corresponding path
-      ![](<../../images/docs/en/site/wp-rocket/Screenshot 2024-04-05 at 15.57.24-1.png>)
+      ![](<../../images/docs/vi/site/wp-rocket/Screenshot 2024-04-05 at 15.57.24-1.png>)
       `php8.2` is the current php version being used for this website.
     - User: corresponds to the user of the current website
     - Cron Expression: in minute, change to `*/15`

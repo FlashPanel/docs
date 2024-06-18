@@ -32,7 +32,7 @@ Nginx supports many different load balancing algorithms:
 
 This algorithm distributes requests to the server in cyclic order. It assigns a request to the first server, then passes to the second, third, and so on. and after reaching the last server, it will start again at the first server.
 
-![](../../images/docs/en/site/load-balancing/efc0a2523515ad8ceae731900.gif)
+![](../../images/docs/vi/site/load-balancing/efc0a2523515ad8ceae731900.gif)
 
 Advantage:
 
@@ -66,7 +66,7 @@ The Least Connections algorithm directs requests to the server with the lowest n
 
 The IP Hash algorithm determines which server the request will be sent to based on the source and/or destination IP address. This method maintains session persistence, ensuring that requests from a particular user are routed to the same server.
 
-![](../../images/docs/en/site/load-balancing/0e3fb928f3235ebc3df99ea03.gif)
+![](../../images/docs/vi/site/load-balancing/0e3fb928f3235ebc3df99ea03.gif)
 
 **Advantage:**
 

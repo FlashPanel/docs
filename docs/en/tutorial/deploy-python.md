@@ -28,7 +28,7 @@ sudo apt install python3-venv -y
 
 Let's say your python application runs on port `1406`
 
-![](<../../images/docs/en/tutorial/deploy-python/Screenshot 2024-06-12 164349.png>)
+![](<../../images/docs/vi/tutorial/deploy-python/Screenshot 2024-06-12 164349.png>)
 
 Point the website DNS to the server and [install SSL](../site/ssl.md)
 

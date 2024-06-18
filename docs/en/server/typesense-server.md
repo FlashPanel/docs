@@ -11,7 +11,7 @@ import { data } from '../../.vitepress/config.data.ts'
 
 # Typesense Server
 
-![](<../../images/docs/en/server/typesense-server/Screenshot 2024-06-08 at 15.42.19.png>)
+![](<../../images/docs/vi/server/typesense-server/Screenshot 2024-06-08 at 15.42.19.png>)
 
 How to install Typesense Server Search on {{ data.name }}
 
@@ -57,7 +57,7 @@ First you need a brand new server connected to {{ data.name }} (just install `Ng
 
 Go to the server's `Applications` tab, find the `Typesense Server` application and click install
 
-![](<../../images/docs/en/server/typesense-server/Screenshot 2024-06-08 at 15.18.59.png>)
+![](<../../images/docs/vi/server/typesense-server/Screenshot 2024-06-08 at 15.18.59.png>)
 
 Please save information such as `Port` and `Master Key`.
 

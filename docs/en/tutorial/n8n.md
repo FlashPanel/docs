@@ -12,7 +12,7 @@
     npm -g install n8n
     ```
 
-    ![](<../../images/docs/en/tutorial/n8n/Screenshot 2024-06-02 at 12.08.47.png>)
+    ![](<../../images/docs/vi/tutorial/n8n/Screenshot 2024-06-02 at 12.08.47.png>)
 
 4. Still in terminal step 3, start `n8n` with the command
 
@@ -37,7 +37,7 @@
 
     :::
 
-    ![](<../../images/docs/en/tutorial/n8n/Screenshot 2024-03-30 at 17.02.50.png>)
+    ![](<../../images/docs/vi/tutorial/n8n/Screenshot 2024-03-30 at 17.02.50.png>)
 
 ## Access
 
@@ -47,24 +47,24 @@ To access UI `n8n` you have 2 options, use the form `http://ip:port` or `domain`
 
 1. Use the [Firewall Rule](../server/firewall-rule.md) feature
 2. Add firewall rule as follows:
-   ![](<../../images/docs/en/tutorial/n8n/Screenshot 2024-03-30 at 17.11.06.png>)
+   ![](<../../images/docs/vi/tutorial/n8n/Screenshot 2024-03-30 at 17.11.06.png>)
 
     Name: enter `n8n`
     Port: enter `5678`
-    ![](<../../images/docs/en/tutorial/n8n/Screenshot 2024-03-30 at 17.12.29.png>)
+    ![](<../../images/docs/vi/tutorial/n8n/Screenshot 2024-03-30 at 17.12.29.png>)
     Press the `Add Firewall` button
 
 3. Open browser enter with `http://ip:5678` replace `ip` with your server ip
-   ![](<../../images/docs/en/tutorial/n8n/Screenshot 2024-03-30 at 17.15.19.png>)
+   ![](<../../images/docs/vi/tutorial/n8n/Screenshot 2024-03-30 at 17.15.19.png>)
 
 ### Used with the form `domain`
 
 Let's say you have a domain name of `domain.com` and you want to use `n8n.domain.com` to access the `n8n` UI:
 
 1. [Create a website](../site/basic.md#create-page-web) named `n8n.domain.com`
-   ![](<../../images/docs/en/tutorial/n8n/Screenshot 2024-03-30 at 17.21.15.png>)
+   ![](<../../images/docs/vi/tutorial/n8n/Screenshot 2024-03-30 at 17.21.15.png>)
 2. Go to the `nginx` section of the website to edit
-   ![](<../../images/docs/en/tutorial/n8n/Screenshot 2024-03-30 at 17.23.26.png>)
+   ![](<../../images/docs/vi/tutorial/n8n/Screenshot 2024-03-30 at 17.23.26.png>)
 3. Scroll down, add lines with + (plus) signs and delete lines with - (minus) signs.
 
     ```nginx
@@ -135,9 +135,9 @@ Let's say you have a domain name of `domain.com` and you want to use `n8n.domain
 
 4. Click the `Edit Nginx Configuration` button to make changes
 5. Click the `Sync` button to apply the changes.
-   ![](<../../images/docs/en/tutorial/n8n/Screenshot 2024-03-30 at 17.33.06.png>)
+   ![](<../../images/docs/vi/tutorial/n8n/Screenshot 2024-03-30 at 17.33.06.png>)
 6. Open a browser and go to `n8n.domain.com` (replace domain.com with your domain name)
    ![](<../../images/docs/vi/tutorial/n8n/Screenshot 2024-03-30 at 17.35.08.png>)
 
 Showing up like this is successful
-![](<../../images/docs/en/tutorial/n8n/Screenshot 2024-03-30 at 20.19.16.png>)
+![](<../../images/docs/vi/tutorial/n8n/Screenshot 2024-03-30 at 20.19.16.png>)

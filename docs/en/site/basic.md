@@ -12,7 +12,7 @@ import { data } from '../../.vitepress/config.data.ts'
 
 1. On the server management page, click the `New Site` button
 
-    ![](<../../images/docs/en/site/basic/Screenshot 2024-03-30 at 3.30.14.png>)
+    ![](<../../images/docs/vi/site/basic/Screenshot 2024-03-30 at 3.30.14.png>)
 
     When creating a new site on your `{{ data.name }}` server, many configuration options are available to you:
 
@@ -24,7 +24,7 @@ import { data } from '../../.vitepress/config.data.ts'
     - **PHP Version**: If you have multiple versions of PHP installed on your server, you can choose which version will be used to serve the website.
     - **Enable subdomain wildcard**: Subdomain wildcard allows you to set the destination for all non-existent subdomains to the current website.
     - **Site Isolation**: This configuration setting indicates whether the PHP-FPM process should run on the specified user account or use the default user.
-        <!-- You can learn more about site quarantine by consulting [the feature's full documentation](#). -->
+          <!-- You can learn more about site quarantine by consulting [the feature's full documentation](#). -->
     - **Create Database**: This setting indicates whether you want to create a new database for your site.
 
 2. Enter information > Select `Create website`

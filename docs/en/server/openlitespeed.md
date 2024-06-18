@@ -16,7 +16,7 @@ OpenLiteSpeed ​​is an attractive web server choice for projects and developm
 
 ## Install OpenLiteSpeed
 
-![](<../../images/docs/en/server/openlitespeed/Screenshot 2024-04-13 at 12.06.20.png>)
+![](<../../images/docs/vi/server/openlitespeed/Screenshot 2024-04-13 at 12.06.20.png>)
 
 ## Access OpenLiteSpeed ​​Web Admin
 
@@ -29,12 +29,12 @@ You can choose one of two ways: continue accessing or install an SSL certificate
 ## Method 1: Continue accessing on Chrome
 
 ![](<../../images/docs/vi/server/openlitespeed/Screenshot 2024-04-13 at 21.47.08.png>)
-![](<../../images/docs/en/server/openlitespeed/Screenshot 2024-04-13 at 21.47.17.png>)
+![](<../../images/docs/vi/server/openlitespeed/Screenshot 2024-04-13 at 21.47.17.png>)
 
 ## Method 1: Continue accessing on Safari
 
-![](<../../images/docs/en/server/openlitespeed/Screenshot 2024-04-13 at 21.55.29.png>)
-![](<../../images/docs/en/server/openlitespeed/Screenshot 2024-04-13 at 21.42.38.png>)
+![](<../../images/docs/vi/server/openlitespeed/Screenshot 2024-04-13 at 21.55.29.png>)
+![](<../../images/docs/vi/server/openlitespeed/Screenshot 2024-04-13 at 21.42.38.png>)
 
 Click `Visit Website`
 ![](<../../images/docs/vi/server/openlitespeed/Screenshot 2024-04-13 at 21.42.55.png>)
@@ -42,12 +42,12 @@ Click `Visit Website`
 ## Method 2: Install SSL certificate for web admin
 
 1. Create a website in `{{ data.name }}`
-   ![](<../../images/docs/en/server/openlitespeed/Screenshot 2024-04-13 at 22.06.35.png>)
+   ![](<../../images/docs/vi/server/openlitespeed/Screenshot 2024-04-13 at 22.06.35.png>)
 
-    ![](<../../images/docs/en/server/openlitespeed/Screenshot 2024-04-13 at 22.07.26.png>)
+    ![](<../../images/docs/vi/server/openlitespeed/Screenshot 2024-04-13 at 22.07.26.png>)
 
 2. Install [SSL](../site/ssl.md) for the website you just created, and get the certificate ID in this demo which is `101082`
-   ![](<../../images/docs/en/server/openlitespeed/Screenshot 2024-04-13 at 22.37.15.png>)
+   ![](<../../images/docs/vi/server/openlitespeed/Screenshot 2024-04-13 at 22.37.15.png>)
 
 3. Open terminal and run the command below
 
@@ -59,7 +59,7 @@ Click `Visit Website`
     ```
 
 4. Access web admin using domain:port (default 7080)
-   ![](<../../images/docs/en/server/openlitespeed/Screenshot 2024-04-13 at 22.48.48.png>)
+   ![](<../../images/docs/vi/server/openlitespeed/Screenshot 2024-04-13 at 22.48.48.png>)
 
 ## LiteSpeed ​​Cache
 
@@ -82,30 +82,30 @@ LiteSpeed ​​Cache (also known as LSCache) is built from the ground up and in
 ## 413 Request Entity Too Large
 
 1. Check the php version your website is using, in this example it is `7.4`
-   ![](<../../images/docs/en/server/openlitespeed/Screenshot 2024-04-17 at 18.22.19.png>)
+   ![](<../../images/docs/vi/server/openlitespeed/Screenshot 2024-04-17 at 18.22.19.png>)
 2. Go to `OpenLiteSpeed` settings
-   ![](<../../images/docs/en/server/openlitespeed/Screenshot 2024-04-19 at 5.50.11.png>)
+   ![](<../../images/docs/vi/server/openlitespeed/Screenshot 2024-04-19 at 5.50.11.png>)
 3. Navigate to the path `lsphp74/etc/php/7.4` and open the file `php.ini`
-   ![](<../../images/docs/en/server/openlitespeed/Screenshot 2024-04-19 at 5.51.14.png>)
+   ![](<../../images/docs/vi/server/openlitespeed/Screenshot 2024-04-19 at 5.51.14.png>)
 4. Search for the `upload_max_filesize` setting value in the `php.ini` file. The default is `2M`, which is 2 megabytes, and change it to the value you desire
-   ![](<../../images/docs/en/server/openlitespeed/Screenshot 2024-04-19 at 5.52.16.png>)
+   ![](<../../images/docs/vi/server/openlitespeed/Screenshot 2024-04-19 at 5.52.16.png>)
 5. Click the OpenLiteSpeed ​​`restart` button
    ![](<../../images/docs/vi/server/openlitespeed/Screenshot 2024-04-19 at 5.58.29.png>)
 
 ## Configure redirects in OpenLiteSpeed
 
 1. Access [web admin](#access-cap-openlitespeed-web-admin) and Select Virtual Host to redirect
-   ![](<../../images/docs/en/server/openlitespeed/Screenshot 2024-04-26 at 10.38.23.png>)
+   ![](<../../images/docs/vi/server/openlitespeed/Screenshot 2024-04-26 at 10.38.23.png>)
 
 2. Select the `Context` tab and click `Add New`
-   ![](<../../images/docs/en/server/openlitespeed/Screenshot 2024-04-26 at 10.39.17.png>)
+   ![](<../../images/docs/vi/server/openlitespeed/Screenshot 2024-04-26 at 10.39.17.png>)
 
 3. Select type `Redirect` and click `Next`
-   ![](<../../images/docs/en/server/openlitespeed/Screenshot 2024-04-26 at 10.40.14.png>)
+   ![](<../../images/docs/vi/server/openlitespeed/Screenshot 2024-04-26 at 10.40.14.png>)
 
 4. Here you can start configuration.
 
-    ![](<../../images/docs/en/server/openlitespeed/Screenshot 2024-04-26 at 10.52.20.png>)
+    ![](<../../images/docs/vi/server/openlitespeed/Screenshot 2024-04-26 at 10.52.20.png>)
 
     - URL: path to redirect. Here you only enter the URL. No domain name included (For example, here I put it /index.html)
     - External Redirect: Choose Yes

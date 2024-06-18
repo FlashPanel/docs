@@ -40,7 +40,7 @@ Enable OpenSSH Client on Windows 10 by:
 
 1. Open **Settings** panel, click **Apps**
 2. Under the _Apps and Features_ heading, click **Optional Features.**
-   ![](../../images/activate-ssh-key-windows.webp)
+   ![](../../images/kich-hoat-ssh-key-windows.webp)
 3. Scroll down the list to see if **OpenSSH Client** is listed
     - If not, click on the + sign next to **Add a feature.**
     - Slide down the list to find and select **OpenSSH Client.**

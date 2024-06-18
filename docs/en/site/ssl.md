@@ -28,7 +28,8 @@ You can create a Singing Request at the `SSL` tab on {{ data.name }}'s website d
 
 1. Select `LetsEnctypet`
 2. Select `LetsEnctypet Settings`
-   ![](../../images/site-ssl-08.png)
+
+    ![](../../images/site-ssl-08.png)
 
 ::: warning
 Due to the LetsEncrypt renewal process, LetsEncrypt certificates cannot be copied to other sites. You just need to issue a new LetsEncrypt certificate to that website.
@@ -74,10 +75,16 @@ You can easily copy 1 certificate from another in your {{ data.name }} servers.
 This is a guide to using a `free` 15-year Cloudflare certificate if your domain is using Cloudflare service, the advantage is that it does not need to be renewed every 3 months like `LetsEncrypt` or `ZeroSSL` certificates
 :::
 
-1. First go to the `Cloudflare` panel, then select `SSL/TLS`. Here select `SSL/TLS encryption mode` to `Full` ![](<../../images/ssl/Screenshot 2024-03-24 at 10.39.57.png>)
-2. Next select `Origin Server`, click `Create Certificate` ![](<../../images/ssl/Screenshot 2024-03-24 at 10.43.02.png>)
-3. Click `Create` to create ![](<../../images/ssl/Screenshot 2024-03-24 at 10.45.04.png>)
-   At this point we will have information about the newly created certificate![](<../../images/ssl/Screenshot 2024-03-24 at 10.46.38.png>)
-4. Go back to `{{ data.name }}` > `SSL` tab > select `Install Existing Certificate` ![](<../../images/ssl/Screenshot 2024-03-24 at 10.49.08 .png>)
-5. Copy items ① and ② in `step 3` into items ① and ② respectively![](<../../images/ssl/Screenshot 2024-03-24 at 10.49.38.png>)
+1. First go to the `Cloudflare` panel, then select `SSL/TLS`. Here select `SSL/TLS encryption mode` to `Full`
+   ![](<../../images/ssl/Screenshot 2024-03-24 at 10.39.57.png>)
+2. Next select `Origin Server`, click `Create Certificate`
+   ![](<../../images/ssl/Screenshot 2024-03-24 at 10.43.02.png>)
+3. Click `Create` to create
+   ![](<../../images/ssl/Screenshot 2024-03-24 at 10.45.04.png>)
+   At this point we will have information about the newly created certificate
+   ![](<../../images/ssl/Screenshot 2024-03-24 at 10.46.38.png>)
+4. Go back to `{{ data.name }}` > `SSL` tab > select `Install Existing Certificate`
+   ![](<../../images/ssl/Screenshot 2024-03-24 at 10.49.08.png>)
+5. Copy items ① and ② in `step 3` into items ① and ② respectively
+   ![](<../../images/ssl/Screenshot 2024-03-24 at 10.49.38.png>)
 6. Click `Install Existing Certificate` and you're done

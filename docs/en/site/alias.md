@@ -11,9 +11,9 @@ Alias, also known as Parked domain, allows us to run a website on many different
 ## Add alias domain
 
 1. On the website management page, click the `Add` button
-   ![](<../../images/docs/en/site/alias/Screenshot 2024-04-03 at 14.18.01.png>)
+   ![](<../../images/docs/vi/site/alias/Screenshot 2024-04-03 at 14.18.01.png>)
 2. Enter the alias domain name, press <kbd>TAB</kbd> or <kbd>Enter</kbd> or <kbd>,</kbd> to confirm
-   ![](<../../images/docs/en/site/alias/Screenshot 2024-04-03 at 14.26.41.png>)
+   ![](<../../images/docs/vi/site/alias/Screenshot 2024-04-03 at 14.26.41.png>)
 3. Click the `Add Alias ​​Domain` button
 
 ## Configuration specific to WordPress source code

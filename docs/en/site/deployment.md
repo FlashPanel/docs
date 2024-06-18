@@ -16,7 +16,7 @@ Deployment is the process in which your code is downloaded from the source contr
 Some applications, such as those built with the Laravel Framework, may require an `.env` file to configure settings such as the database and caching. You can create and edit your Environment files in the management console of the `{{ data.name }}` site.
 
 At the site management console > Select `.env`
-![](<../../images/docs/en/site/deployment/Screenshot 2024-03-30 at 4.10.01.png>)
+![](<../../images/docs/vi/site/deployment/Screenshot 2024-03-30 at 4.10.01.png>)
 
 ::: warning **! Automatic Environment Files**  
 If your project contains a `.env.example` file, `{{ data.name }}` will automatically copy this file and replace some settings to match the server's database settings your. An empty `.env.example` file may result in an empty environment file on first deployment.
@@ -30,7 +30,7 @@ You can enable auto-deployment of `{{ data.name }}` following:
 
 1. At the website management dashboard
 2. Select the `Deployments` tab and click the `Enable auto deploy` button
-   ![](<../../images/docs/en/site/deployment/Screenshot 2024-03-30 at 4.14.36.png>)
+   ![](<../../images/docs/vi/site/deployment/Screenshot 2024-03-30 at 4.14.36.png>)
 
 ## Deployment script
 

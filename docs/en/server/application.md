@@ -31,23 +31,23 @@ Currently {{ data.name }} is supporting the installation of many applications, i
 
 1. Select the server to manage
 2. Click on the `Applications` icon to go to the application management page
-   ![](<../../images/application/Screenshot 2024-03-23 ​​at 17.28.37.png>)
+   ![](<../../images/application/Screenshot 2024-03-23 at 17.28.37.png>)
 3. Select the uninstalled application
-   ![](<../../images/application/Screenshot 2024-03-23 ​​at 17.37.46.png>)
+   ![](<../../images/application/Screenshot 2024-03-23 at 17.37.46.png>)
 4. Click the install button
-   ![](<../../images/application/Screenshot 2024-03-23 ​​at 17.41.15.png>)
+   ![](<../../images/application/Screenshot 2024-03-23 at 17.41.15.png>)
 
 ## Uninstall the application
 
 1. Select the server to manage
 2. Click on the `Applications` icon to go to the application management page
-   ![](<../../images/application/Screenshot 2024-03-23 ​​at 17.28.37.png>)
+   ![](<../../images/application/Screenshot 2024-03-23 at 17.28.37.png>)
 3. Click the uninstall button
-   ![](<../../images/application/Screenshot 2024-03-23 ​​at 17.42.53.png>)
+   ![](<../../images/application/Screenshot 2024-03-23 at 17.42.53.png>)
 
 ## Actions on installed applications
 
-![](<../../images/application/Screenshot 2024-03-23 ​​at 17.44.12.png>)
+![](<../../images/application/Screenshot 2024-03-23 at 17.44.12.png>)
 
 1. Configure the application
 2. View the logs that the application records

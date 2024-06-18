@@ -67,7 +67,7 @@ In systemd, a "Service Unit" is a special unit used to define and manage system 
 ### Service management main screen
 
 **At the main screen of the server management page**: Select Services
-![](<../../images/docs/en/server/service/Screenshot 2024-06-13 at 23.02.42.png>)
+![](<../../images/docs/vi/server/service/Screenshot 2024-06-13 at 23.02.42.png>)
 
 ### Create and Configure Service Unit:
 
@@ -93,7 +93,7 @@ Steps to edit the configuration of a service follow the instructions in the foll
 
 ### Other actions on the service management home screen:
 
-![](<../../images/docs/en/server/service/Screenshot 2024-06-13 at 23.05.43.png>)
+![](<../../images/docs/vi/server/service/Screenshot 2024-06-13 at 23.05.43.png>)
 
 1. **Start service**
 2. **Restart service**

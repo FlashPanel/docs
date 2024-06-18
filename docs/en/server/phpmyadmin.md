@@ -55,7 +55,7 @@ phpMyAdmin version may work on PHP greater than 8.0 but may experience some comp
 
 3.  **Install phpMyAdmin**: Go to the website management panel.
     Then select the option to install phpMyAdmin source code
-    ![](<../../images/phpmyadmin/Screenshot 2024-03-23 ​​at 18.23.45.png>)
+    ![](<../../images/phpmyadmin/Screenshot 2024-03-23 at 18.23.45.png>)
 
 4.  Select `Install phpMyAdmin`
 

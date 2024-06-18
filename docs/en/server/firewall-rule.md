@@ -20,7 +20,7 @@ You can configure and manage your firewall from within the {{ data.name }} conso
 For added security, you can restrict opened ports to specific IP addresses. Steps to configure a firewall:
 
 1. At the `Network` tab > click the `Add Firewall Rule` button:
-   ![](<../../images/docs/en/server/firewall-rule/Screenshot 2024-04-23 at 12.48.24.png>)
+   ![](<../../images/docs/vi/server/firewall-rule/Screenshot 2024-04-23 at 12.48.24.png>)
 
 2. Fill out according to instructions
 

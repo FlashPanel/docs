@@ -22,7 +22,7 @@ Suppose you have an ASP.NET website that you want to run under the domain `domai
 
 1. Go to [application store](../server/application.md), install the `ASP.NET` application
 
-    ![](<../../images/docs/en/tutorial/deploy-asp-dotnet/Screenshot 2024-05-28 at 12.58.32.png>)
+    ![](<../../images/docs/vi/tutorial/deploy-asp-dotnet/Screenshot 2024-05-28 at 12.58.32.png>)
 
 2. Create a website with the following configuration
 

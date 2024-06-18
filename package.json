@@ -3,7 +3,8 @@
   "name": "flashpanel",
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev docs"
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs"
   },
   "devDependencies": {
     "@types/node": "^20.14.1",
