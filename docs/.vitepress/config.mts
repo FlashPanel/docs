@@ -14,11 +14,7 @@ export default defineConfig({
         root: {
             label: "English",
             lang: "en",
-        },
-        en: {
-            label: "English",
-            lang: "en",
-            link: "/",
+            link: "/en/what-is-flash-panel",
             themeConfig: {
                 sidebar: [
                     {
@@ -55,7 +51,7 @@ export default defineConfig({
         vi: {
             label: "Tiếng Việt",
             lang: "vi",
-            link: "/",
+            link: "/vi/what-is-flash-panel",
             themeConfig: {
                 sidebar: [
                     {
