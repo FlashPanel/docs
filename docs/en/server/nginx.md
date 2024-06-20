@@ -46,31 +46,14 @@ In short, Nginx is a powerful and flexible solution for many needs of modern web
 
 In the system, using `{{ data.name }}` by default redirects http://www.domain.com to https://domain.com.
 
-However, `https://www.domain.com` will not redirect to https://domain.com because browsers like Chrome allow this, but for Safari, it is more strict than accessing Accessing `https://www.domain.com` will result in an error.
+However, `https://www.domain.com` will not redirect to https://domain.com because in highly restrictive browsers like Safari or on mobile, accessing `https:// www.domain.com` will fail.
 
 To redirect https www to non-www, do the following
 
-1. Inside the website domain.com you will see the Alias ​​Domain section, click add
+1. Inside the website domain.com you will see the section `www Enable`
+   ![](<../../images/docs/vi/server/nginx/Screenshot 2024-06-20 at 12.37.30.png>)
 
-    ![](<../../images/docs/vi/server/nginx/Screenshot 2024-05-21 at 17.07.46.png>)
-
-2. Enter the alias domain name, press <kbd>TAB</kbd> or <kbd>Enter</kbd> or <kbd>,</kbd> to confirm
-3. Click the `Add Alias ​​Domain` button
-4. Proceed to issue SSL for `www.domain.com` as usual
-5. Go to the `Nginx` tab and click `Redirect`
-
-    ![](<../../images/docs/vi/server/nginx/Screenshot 2024-05-21 at 18.26.49.png>)
-
-    - Memo: enter any note
-    - From: /
-    - To: `https://domain.com$request_uri` replace `domain.com` with the corresponding domain
-    - Type: `permanent redirect`
-
-![](<../../images/docs/vi/server/nginx/Screenshot 2024-05-21 at 18.28.11.png>)
-
-    Click `New Rewrite Rule`
-
-6. Click the `Sync` button to apply the changes
+2. Click the `Enable` button and you're done.
 
 ## Use another PHP version in the subfolder
 

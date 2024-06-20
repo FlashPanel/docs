@@ -110,13 +110,11 @@ server{
     listen [::]:80;
     server_name your-domain.com;
     server_tokens off;
-    root /home/flashvps/your-domain.com;
+    root /home/user/your-domain.com;
 
     # ssl_certificate ###
     # ssl_certificate_key ###
 
-    # https://ssl-config.mozilla.org/
-    # Ubuntu 20.04 UP
     ssl_protocols TLSv1.2 TLSv1.3;
     ssl_ciphers XXXXXX;
     ssl_prefer_server_ciphers off;
@@ -134,7 +132,7 @@ server{
     location ^~ /.well-known/acme-challenge {
         auth_basic off;
         allow all;
-        alias /home/flashvps/.letsencrypt;
+        alias /home/user/.letsencrypt;
     }
 
     location / {

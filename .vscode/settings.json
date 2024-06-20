@@ -1,6 +1,10 @@
 {
-  "markdown.copyFiles.destination": {
-    "/docs/**/*": "/docs/images/${documentRelativeDirName}/${documentBaseName}/"
-  },
-  "markdown.updateLinksOnFileMove.enabled": "always"
+    "markdown.copyFiles.destination": {
+        "/docs/**/*": "/docs/images/${documentRelativeDirName}/${documentBaseName}/"
+    },
+    "markdown.updateLinksOnFileMove.enabled": "always",
+    "search.exclude": {
+        "**/public": true,
+        "**/.vitepress/cache": true
+    }
 }

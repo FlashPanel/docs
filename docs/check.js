@@ -40,8 +40,18 @@ async function readDirRecursive(dir) {
       }
     }
   }
-  console.log(
-    "unused images:\n",
-    images.filter((v) => !v.used).map((v) => v.path)
-  );
+
+  const unusedImages = images.filter((v) => !v.used).map((v) => v.path);
+
+  console.log("unused images:\n", unusedImages);
+
+  unusedImages.forEach((image) => {
+    fs.unlink(`${__dirname}/${image}`, (err) => {
+      if (err) {
+        console.error("Error deleting the file:", err.message);
+      } else {
+        console.log("File deleted successfully");
+      }
+    });
+  });
 })();

@@ -46,31 +46,14 @@ Tóm lại, Nginx là một giải pháp mạnh mẽ và linh hoạt cho nhiều
 
 Trong hệ thống sử dụng `{{ data.name }}` mặc định redirect http://www.domain.com sang https://domain.com.
 
-Tuy nhiên `https://www.domain.com` sẽ không redirect sang https://domain.com được vì ở các trình duyệt như Chrome cho phép làm điều này, nhưng đối với Safari có tính khắc khe cao hơn việc truy cập vào `https://www.domain.com` sẽ bị lỗi.
+Tuy nhiên `https://www.domain.com` sẽ không redirect sang https://domain.com được vì ở các trình duyệt có tính khắc khe cao như Safari hay trên mobile, việc truy cập vào `https://www.domain.com` sẽ bị lỗi.
 
 Để redirect https www sang non-www các bạn làm như sau
 
-1. Vào bên trong website domain.com sẽ thấy mục Alias Domain, ấn thêm
+1. Vào bên trong website domain.com sẽ thấy mục `www Enable`
+   ![](<../../images/docs/vi/server/nginx/Screenshot 2024-06-20 at 12.37.30.png>)
 
-    ![](<../../images/docs/vi/server/nginx/Screenshot 2024-05-21 at 17.07.46.png>)
-
-2. Nhập tên miền bí danh, bấm phím <kbd>TAB</kbd> hoặc <kbd>Enter</kbd> hoặc <kbd>,</kbd> để xác nhận
-3. Bấm nút `Add Alias Domain`
-4. Tiến hành cấp SSL cho `www.domain.com` như bình thường
-5. Sang tab `Nginx` bấm `Redirect`
-
-    ![](<../../images/docs/vi/server/nginx/Screenshot 2024-05-21 at 18.26.49.png>)
-
-    - Memo: nhập ghi chú gì cũng được
-    - From: /
-    - To: `https://domain.com$request_uri` thay `domain.com` thành domain tương ứng nhé
-    - Type: `permanent redirect`
-
-    ![](<../../images/docs/vi/server/nginx/Screenshot 2024-05-21 at 18.28.11.png>)
-
-    Bấm `New Rewrite Rule`
-
-6. Bấm nút `Sync` để áp dụng thay đổi
+2. Nhấn nút `Enable` là xong.
 
 ## Sử dụng PHP version khác trong subfolder
 
