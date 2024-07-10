@@ -54,7 +54,7 @@ volumes:
 
 Lưu ý cho cấu hình những dòng bôi màu sau:
 
--   `4444:3000`: 3000 là cố định bạn không nên sửa, 4444 là port của website serpbear mà bạn quyết định tạo ở bước 2
+-   `4444:3000`: `3000` là cố định bạn không nên sửa, `4444` là port của website serpbear mà bạn quyết định tạo ở bước 2
 -   `USER`: Tên người dùng bạn muốn sử dụng để đăng nhập vào ứng dụng. ví dụ: `admin`
 -   `PASSWORD`: Mật khẩu bạn muốn sử dụng để đăng nhập vào ứng dụng. Ví dụ: `0123456789`
 -   `BÍ MẬT`: Khóa bí mật sẽ được sử dụng để mã hóa khóa và mật khẩu API của bên thứ 3. ví dụ: `4715aed3216f7b0a38e6b534a958362654e96d10fbc04700770d572af3dce43625dd`
@@ -71,4 +71,22 @@ Mở terminal server lên và chạy lệnh sau:
 ```bash
 cd /root/serpbear
 docker compose up -d
+```
+
+7. Khởi động lại container (nếu có chỉnh sửa file `serpbear/docker-compose.yaml`)
+
+Mở terminal server lên và chạy lệnh sau:
+
+```bash
+docker ps
+```
+
+Lúc này bạn sẽ thấy danh sách container đang chạy.
+
+Tìm dòng nào có thông tin `serpbear` thì lấy container ID của dòng đó.
+
+Chạy lệnh docker restart để nạp lại thông tin mới
+
+```bash
+docker restart container_id
 ```
