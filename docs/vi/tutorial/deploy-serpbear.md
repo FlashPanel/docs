@@ -33,7 +33,7 @@ services:
         image: towfiqi/serpbear
         restart: unless-stopped
         ports:
-            - 3000:4444 # [!code warning]
+            - 4444:3000 # [!code warning]
         environment:
             - USER=admin # [!code warning]
             - PASSWORD=0123456789 # [!code warning]
@@ -52,7 +52,7 @@ volumes:
 
 Lưu ý cho cấu hình những dòng bôi màu sau:
 
--   `3000:4444`: 3000 là cố định, 4444 là port của website serpbear mà bạn quyết định tạo ở bước 2
+-   `4444:3000`: 3000 là cố định bạn không nên sửa, 4444 là port của website serpbear mà bạn quyết định tạo ở bước 2
 -   `USER`: Tên người dùng bạn muốn sử dụng để đăng nhập vào ứng dụng. ví dụ: `admin`
 -   `PASSWORD`: Mật khẩu bạn muốn sử dụng để đăng nhập vào ứng dụng. Ví dụ: `0123456789`
 -   `BÍ MẬT`: Khóa bí mật sẽ được sử dụng để mã hóa khóa và mật khẩu API của bên thứ 3. ví dụ: `4715aed3216f7b0a38e6b534a958362654e96d10fbc04700770d572af3dce43625dd`
