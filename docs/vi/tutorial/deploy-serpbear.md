@@ -68,5 +68,5 @@ Mở terminal server lên và chạy lệnh sau:
 
 ```bash
 cd /root/serpbear
-docker-compose up -d
+docker compose up -d
 ```
