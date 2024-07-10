@@ -15,6 +15,8 @@ head:
 
 3. Mở file manager cho server (không phải site)
 
+Tiến hành tạo file `serpbear/docker-compose.yaml`
+
 ![tạo file docker-compose.yaml](<../../images/docs/vi/tutorial/deploy-serpbear/Screenshot 2024-07-10 at 13.35.10.png>)
 
 4. Mở file `docker-compose.yaml` vừa tạo
