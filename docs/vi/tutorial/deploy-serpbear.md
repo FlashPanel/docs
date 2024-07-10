@@ -13,6 +13,8 @@ head:
 
 ![tạo website deploy SerpBear](<../../images/docs/vi/tutorial/deploy-serpbear/Screenshot 2024-07-10 at 13.32.31.png>)
 
+Tiến hành [cài đặt SSL](../site/ssl.md) cho website này
+
 3. Mở file manager cho server (không phải site)
 
 Tiến hành tạo file `serpbear/docker-compose.yaml`
