@@ -28,7 +28,7 @@ define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST']);
 ```
 
 ```php [https]
-define('WP_SITEURL', 'https://' . $_SERVER['s_HOST']);
+define('WP_SITEURL', 'https://' . $_SERVER['HTTP_HOST']);
 define('WP_HOME', 'https://' . $_SERVER['HTTP_HOST']);
 ```
 
