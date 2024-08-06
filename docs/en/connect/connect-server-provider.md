@@ -68,3 +68,14 @@ import { data } from '../../.vitepress/config.data.ts'
 7. Select server provider `Hetzner`
 8. Enter a note about this API Token
 9. Enter the API Token obtained in step 4
+
+## Bizfly Cloud
+
+1. Go to the [Application Credential configuration page](https://manage.bizflycloud.vn/account/configuration/credential)
+2. Click create new `Application Credential`, then enter name, description, ... and click `Confirm`
+3. Application Credential information will appear, copy `Application Credential ID` and `Secret Key`
+4. Return to <a :href="data.url + '/user/vps'" target="_blank">{{ data.name }}</a>
+5. Click the `Add Credentials` button
+6. Select `Bizfly Cloud` server provider
+7. Enter a note about this API Credential
+8. Enter `API Key` as `Application ID Credential` and `API Secret` as `Secret Key` obtained in step 3

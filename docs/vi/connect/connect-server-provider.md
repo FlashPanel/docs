@@ -26,7 +26,7 @@ import { data } from '../../.vitepress/config.data.ts'
 4. Quay lại <a :href="data.url + '/user/vps'" target="_blank">{{ data.name }}</a>
 5. Ấn nút `Thêm Thông Tin Chứng Thực`
 6. Chọn nhà cung cấp máy chủ `Digital Ocean`
-7. Nhập ghi chú về API Token này
+7. Nhập ghi chú về API Credential này
 8. Nhập API Token lấy ở bước 3
 
 ## Linode
@@ -40,7 +40,7 @@ import { data } from '../../.vitepress/config.data.ts'
 5. Quay lại <a :href="data.url + '/user/vps'" target="_blank">{{ data.name }}</a>
 6. Ấn nút `Thêm Thông Tin Chứng Thực`
 7. Chọn nhà cung cấp máy chủ `Linode`
-8. Nhập ghi chú về API Token này
+8. Nhập ghi chú về API Credential này
 9. Nhập API Token lấy ở bước 4
 
 ## UpCloud
@@ -54,7 +54,7 @@ import { data } from '../../.vitepress/config.data.ts'
 5. Quay lại <a :href="data.url + '/user/vps'" target="_blank">{{ data.name }}</a>
 6. Ấn nút `Thêm Thông Tin Chứng Thực`
 7. Chọn nhà cung cấp máy chủ `UpCloud`
-8. Nhập ghi chú về API Token này
+8. Nhập ghi chú về API Credential này
 9. Nhập `tên người dùng` và `mật khẩu` ở bước 4
 
 ## Hetzner
@@ -66,5 +66,16 @@ import { data } from '../../.vitepress/config.data.ts'
 5. Quay lại <a :href="data.url + '/user/vps'" target="_blank">{{ data.name }}</a>
 6. Ấn nút `Thêm Thông Tin Chứng Thực`
 7. Chọn nhà cung cấp máy chủ `Hetzner`
-8. Nhập ghi chú về API Token này
+8. Nhập ghi chú về API Credential này
 9. Nhập API Token lấy ở bước 4
+
+## Bizfly Cloud
+
+1. Vào trang [cấu hình Application Credential](https://manage.bizflycloud.vn/account/configuration/credential)
+2. Bấm tạo mới `Application Credential`, sau đó nhập tên, mô tả, ... và bấm `Xác nhận`
+3. Thông tin Application Credential sẽ hiện ra, bạn copy `ID Application Credential` và `Secret Key`
+4. Quay lại <a :href="data.url + '/user/vps'" target="_blank">{{ data.name }}</a>
+5. Ấn nút `Thêm Thông Tin Chứng Thực`
+6. Chọn nhà cung cấp máy chủ `Bizfly Cloud`
+7. Nhập ghi chú về API Credential này
+8. Nhập API Key là `ID Application Credential` và API Secret là `Secret Key` lấy ở bước 3
