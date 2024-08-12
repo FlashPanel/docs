@@ -70,4 +70,4 @@ Click the + `Import Tunnel from File` button to import the configuration file do
 
 Finally, click the `Active` button
 
-![](<../../images/docs/en/server/wireguard-vpn/Screenshot 2024-08-12 at 22.23.29.png>)
+![](<../../images/docs/vi/server/wireguard-vpn/Screenshot 2024-08-12 at 22.23.29.png>)
