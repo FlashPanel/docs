@@ -68,6 +68,100 @@ Bước 4: Hoàn tất
 
 ---
 
+## Sử dụng Chatwoot
+
+Sau khi hoàn tất cài đặt, truy cập website bạn đã tạo sẽ thấy màn hình cài đặt thông tin **Quản trị viên**, nhập các mục để hoàn tất cài đặt
+
+![screen install](<../../images/docs/vi/tutorial/chatwoot/Screenshot 2024-11-23 at 3.01.47.png>)
+
+### Tạo inbox
+
+-   Bấm nút `New Inbox`
+    ![new inbox chatwoot](<../../images/docs/vi/tutorial/chatwoot/Screenshot 2024-11-29 at 10.49.19.png>)
+
+-   Chọn channel là website
+-   Nhập thông tin channel
+-   Bấm nút `Create Inbox`
+-   Thêm người được phép truy cập vào inbox, và bấm nút `Add Agents`
+-   Và `inbox` đã sẵn sàng, lúc này nó cho 1 đoạn mã để bỏ vào website sử dụng
+
+```js
+<script>
+  (function(d,t) {
+    var BASE_URL="https://chat.flashpanel.io";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.defer = true;
+    g.async = true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({
+        websiteToken: '*****',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
+</script>
+```
+
+Bạn hãy copy mã này đưa vào website cần sử dụng là OK.
+
+### Gửi thông tin người dùng tới Chatwoot bằng SDK
+
+Khi bạn sử dụng đoạn code phía trên, người dùng truy cập website gửi tin nhắn cho bạn sẽ hiện thị tên ngẫu nhiên.
+
+Với những website có người dùng đăng nhập, chúng ta muốn người gửi tin nhắn chứa thông tin đăng nhập như tên, email,... ta thêm đoạn script sau:
+
+```js
+<script>
+  (funct(function (d, t) {
+  var BASE_URL = "https://chat.flashpanel.io";
+  var g = d.createElement(t),
+    s = d.getElementsByTagName(t)[0];
+  g.src = BASE_URL + "/packs/js/sdk.js";
+  g.defer = true;
+  g.async = true;
+  s.parentNode.insertBefore(g, s);
+  g.onload = function () {
+    window.chatwootSDK.run({
+      websiteToken: "*****",
+      baseUrl: BASE_URL,
+    });
+  };
+})(document, "script");
+
+window.addEventListener("chatwoot:ready", function () {
+  window.$chatwoot.setUser(`user-id`, {
+    name: "FlashPanel", // Name of the user
+    avatar_url: "", // Avatar URL
+    email: "admin@flashpanel.io", // Email of the user
+    identifier_hash: "", // Identifier Hash generated based on the webwidget hmac_token
+    phone_number: "", // Phone Number of the user
+    description: "", // description about the user
+    country_code: "", // Two letter country code
+    city: "", // City of the user
+    company_name: "", // company name
+    social_profiles: {
+      twitter: "", // Twitter user name
+      linkedin: "", // LinkedIn user name
+      facebook: "", // Facebook user name
+      github: "", // Github user name
+    },
+  });
+});
+</script>
+```
+
+Trong đoạn script trên ta thấy có 1 mục là `identifier_hash`, mục này xác định rằng `user-id` xác nhận được tạo bởi máy chủ. Tham khảo cách tạo `identifier_hash` bằng `php` dưới đây
+
+```php
+hash_hmac('sha256', 'user-id', 'chatwoot-inbox-hmac-token');
+```
+
+![](<../../images/docs/vi/tutorial/chatwoot/Screenshot 2024-11-29 at 11.08.33.png>)
+
+Khi bật `Enforce User Identity Validation` thì những yêu cầu không hợp lệ sẽ bị từ chối.
+
 ## **cwctl - Công cụ quản lý Chatwoot**
 
 `cwctl` là một công cụ dòng lệnh giúp đơn giản hóa việc cài đặt, nâng cấp và quản lý `Chatwoot`. Công cụ này hỗ trợ các thao tác thường gặp như nâng cấp, kiểm tra log, và khởi động lại dịch vụ.
