@@ -72,7 +72,7 @@ Step 4: Complete
 
 After completing the installation, access the website you created and you will see the **Administrator** information settings screen, enter the items to complete the installation.
 
-![screen install](<../../images/docs/en/tutorial/chatwoot/Screenshot 2024-11-23 at 3.01.47.png>)
+![screen install](<../../images/docs/vi/tutorial/chatwoot/Screenshot 2024-11-23 at 3.01.47.png>)
 
 ### Create inbox
 

@@ -64,7 +64,7 @@ Note for configuring the following colored lines:
 
 6. Launch the application
 
-![run serpbear](<../../images/docs/en/tutorial/deploy-serpbear/Screenshot 2024-07-10 at 13.58.48.png>)
+![run serpbear](<../../images/docs/vi/tutorial/deploy-serpbear/Screenshot 2024-07-10 at 13.58.48.png>)
 
 Open the terminal server and run the following command:
 
