@@ -155,6 +155,28 @@ import { data } from '../../.vitepress/config.data.ts'
    ![](../../images/connect-onedrive.png)
 9. Ấn lưu để hoàn tất.
 
+## Sao lưu đến SFTP
+
+1. Truy vào <a :href="data.url + '/servers/'" target="_blank">trang quản lý máy chủ</a> và chọn máy chủ cần sao lưu, sau đó ấn vào tab `Sao lưu`
+2. Chọn SFTP
+   ![](../../images/docs/vi/server/backup/backup-list.png)
+3. Tại cửa sổ cấu hình kết nối SFTP, Nhập các thông tin kết nối SFTP.
+
+    ![](../../images/docs/vi/server/backup/rclone-sftp-config.png)
+
+-   Memo: Ở ô memo bạn hãy nhập mô tả gì đó để ghi chú
+-   Host: Nhập địa chỉ IPV4 hoặc Tên domain của máy chủ SFTP
+-   User: NHập User kết nối đến SFTP. Mặc định (root)
+-   Port: Nhập cổng kết nối đến SFTP. Mặc định (22)
+
+    ![](../../images/docs/en/server/backup/rclone-sftp-config1.png)
+
+-   SSH Password: Nhập mật khẩu cho user kết nối SFTP
+
+    ![](../../images/docs/en/server/backup/rclone-sftp-config2.png)
+
+-   SSH Private Key & Passphrase: Kết nối đến SFTP sử dụng khoá private và mật khẩu khoá
+
 ## Cấu hình sao lưu
 
 ![](../../images/backup/backup-configuration.png)
