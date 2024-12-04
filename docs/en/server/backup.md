@@ -165,7 +165,7 @@ For the configuration process to go smoothly, you need to prepare the following:
     ![](../../images/docs/en/server/backup/rclone-sftp-config.png)
 
 -   Memo box, enter a description to take notes
--   Host: Enter SFTP IPV4 address or Domain name
+-   Host: Enter SFTP IPv4 address or Domain name
 -   User: SFTP User to connect. Default (root)
 -   Port: SFTP port to connect. Default (22)
 

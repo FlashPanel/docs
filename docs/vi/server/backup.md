@@ -165,8 +165,8 @@ import { data } from '../../.vitepress/config.data.ts'
     ![](../../images/docs/vi/server/backup/rclone-sftp-config.png)
 
 -   Memo: Ở ô memo bạn hãy nhập mô tả gì đó để ghi chú
--   Host: Nhập địa chỉ IPV4 hoặc Tên domain của máy chủ SFTP
--   User: NHập User kết nối đến SFTP. Mặc định (root)
+-   Host: Nhập địa chỉ IPv4 hoặc Tên miền của máy chủ SFTP
+-   User: Nhập người dùng kết nối đến SFTP. Mặc định (root)
 -   Port: Nhập cổng kết nối đến SFTP. Mặc định (22)
 
     ![](../../images/docs/en/server/backup/rclone-sftp-config1.png)
@@ -175,7 +175,7 @@ import { data } from '../../.vitepress/config.data.ts'
 
     ![](../../images/docs/en/server/backup/rclone-sftp-config2.png)
 
--   SSH Private Key & Passphrase: Kết nối đến SFTP sử dụng khoá private và mật khẩu khoá
+-   SSH Private Key & Passphrase: Kết nối đến SFTP sử dụng khoá private và mật khẩu khoá (nếu có)
 
 ## Cấu hình sao lưu
 
