@@ -79,3 +79,57 @@ import { data } from '../../.vitepress/config.data.ts'
 6. Chọn nhà cung cấp máy chủ `Bizfly Cloud`
 7. Nhập ghi chú về API Credential này
 8. Nhập API Key là `ID Application Credential` và API Secret là `Secret Key` lấy ở bước 3
+
+## Amazon Lightsail
+
+**Note** Leave the permissions policies empty, we will configure it later
+
+1. Vào trang [IAM Console Create User](https://us-east-1.console.aws.amazon.com/iam/home#/users/create)
+   ![](../../images/connect-server-provider/lightsail-create-user.png)
+2. Tại panel tạo Permission > `Chọn attach policy directly` > `Chọn Create Policy`
+   ![](../../images/connect-server-provider/lightsail-policy.png)
+3. Tại trang tạo policy > Chọn trình chỉnh sửa `JSON` và dán đoạn json phía dưới > Chọn `Next` Để qua bước 2
+   ![](../../images/connect-server-provider/lightsail-policy-permission.png)
+
+```
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+				"lightsail:GetBundles",
+				"lightsail:GetRegions",
+				"lightsail:GetBlueprints",
+				"lightsail:CreateInstances",
+				"lightsail:GetInstances",
+				"lightsail:GetInstance",
+				"lightsail:DeleteInstance",
+				"lightsail:CreateKeyPair",
+				"lightsail:DeleteKeyPair",
+				"lightsail:RebootInstance",
+				"lightsail:GetKeyPairs",
+				"lightsail:ImportKeyPair",
+				"lightsail:PutInstancePublicPorts"
+			],
+			"Resource": "*"
+		}
+	]
+}
+```
+
+5. Nhập tên và mô tả Permissions và chọn `Create Policy`
+   ![](../../images/connect-server-provider/lightsail-policy-name.png)
+6. Đóng cửa sổ policy và Trở lại cửa sổ thêm mới user > Chọn biểu tượng `Reload` bên cạnh nút Create Policy > Chọn `Next`
+   ![](../../images/connect-server-provider/lightsail-done-attach-permission.png)
+7. Tại step review và create chọn `Create User`
+   ![](../../images/connect-server-provider/lightsail-review-create-user.png)
+8. Đi đến trang chỉnh sửa user bạn vừa tạo và nhấn tạo access token
+   ![](../../images/connect-server-provider/lightsail-create-accesskey.png)
+9. Tại trang tạo access token
+   ![](../../images/connect-server-provider/lightsail-best-accesskey.png)
+10. Nhập mô tả
+    ![](../../images/connect-server-provider/lightsail-accesskey-description.png)
+11. Lưu access key và trở lại panel nhập vào form thêm access key cho nhà cung cấp Lightsail
+    ![](../../images/connect-server-provider/lightsail-accesskey-retrieve.png)
+    ![](../../images/connect-server-provider/lightsail-provider-credential-form.png)
