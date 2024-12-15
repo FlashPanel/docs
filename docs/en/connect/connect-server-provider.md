@@ -128,6 +128,11 @@ import { data } from '../../.vitepress/config.data.ts'
    ![](../../images/connect-server-provider/lightsail-best-accesskey.png)
 10. Enter description
     ![](../../images/connect-server-provider/lightsail-accesskey-description.png)
-11. Save the accessKey and back to FlashPanel and paste the relative access key
+11. Application Credential information will appear, copy `Application Credential ID` and `Secret Key`
     ![](../../images/connect-server-provider/lightsail-accesskey-retrieve.png)
+12. Return to <a :href="data.url + '/user/vps'" target="_blank">{{ data.name }}</a>
+13. Click the `Add Credentials` button
+14. Select `Amazon Lightsail` server provider
+15. Enter a note about this API Credential
+16. Enter `API Key` as `Application ID Credential` and `API Secret` as `Secret Key` obtained in step 11
     ![](../../images/connect-server-provider/lightsail-provider-credential-form.png)
