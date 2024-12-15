@@ -79,3 +79,60 @@ import { data } from '../../.vitepress/config.data.ts'
 6. Select `Bizfly Cloud` server provider
 7. Enter a note about this API Credential
 8. Enter `API Key` as `Application ID Credential` and `API Secret` as `Secret Key` obtained in step 3
+
+## Amazon Lightsail
+
+1. Goto [IAM Console Create User](https://us-east-1.console.aws.amazon.com/iam/home#/users/create)
+   ![](../../images/connect-server-provider/lightsail-create-user.png)
+2. Next to set permissions > `Click attach policy directly` > `Click Create Policy` a new tab open for you
+   ![](../../images/connect-server-provider/lightsail-policy.png)
+3. At the Create Policy page > Select `JSON` editor and Pasted this json config > Click `Next` to Step 2
+   ![](../../images/connect-server-provider/lightsail-policy-permission.png)
+
+```
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+				"lightsail:GetBundles",
+				"lightsail:GetRegions",
+				"lightsail:GetBlueprints",
+				"lightsail:CreateInstances",
+				"lightsail:GetInstances",
+				"lightsail:GetInstance",
+				"lightsail:DeleteInstance",
+				"lightsail:CreateKeyPair",
+				"lightsail:DeleteKeyPair",
+				"lightsail:RebootInstance",
+				"lightsail:GetKeyPairs",
+				"lightsail:ImportKeyPair",
+				"lightsail:PutInstancePublicPorts"
+			],
+			"Resource": "*"
+		}
+	]
+}
+```
+
+5. Enter Policy name, Policy description and Click `Create Policy` to create Policy
+   ![](../../images/connect-server-provider/lightsail-policy-name.png)
+6. Closed the `Policy tab` and `Go back` to create user tab > Click `Icon Reload` next the Create Policy > Click `Next`
+   ![](../../images/connect-server-provider/lightsail-done-attach-permission.png)
+7. At review and create page click `Create User`
+   ![](../../images/connect-server-provider/lightsail-review-create-user.png)
+8. Goto edit your user and create new access key
+   ![](../../images/connect-server-provider/lightsail-create-accesskey.png)
+9. At Create Access Key page
+   ![](../../images/connect-server-provider/lightsail-best-accesskey.png)
+10. Enter description
+    ![](../../images/connect-server-provider/lightsail-accesskey-description.png)
+11. Application Credential information will appear, copy `Application Credential ID` and `Secret Key`
+    ![](../../images/connect-server-provider/lightsail-accesskey-retrieve.png)
+12. Return to <a :href="data.url + '/user/vps'" target="_blank">{{ data.name }}</a>
+13. Click the `Add Credentials` button
+14. Select `Amazon Lightsail` server provider
+15. Enter a note about this API Credential
+16. Enter `API Key` as `Application ID Credential` and `API Secret` as `Secret Key` obtained in step 11
+    ![](../../images/connect-server-provider/lightsail-provider-credential-form.png)
