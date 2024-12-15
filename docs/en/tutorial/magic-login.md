@@ -1,3 +1,14 @@
+---
+head:
+    - - meta
+      - name: description
+        content: Instructions for One-Click Login WordPress As Your Admin User
+---
+
+<script setup>
+import { data } from '../../.vitepress/config.data.ts'
+</script>
+
 # Magic Login: Login To Your WordPress Sites As Your Admin User
 
 Magic login is a term used to describe a type of login process that provides a seamless and effortless authentication experience for users.

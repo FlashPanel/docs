@@ -1,3 +1,14 @@
+---
+head:
+    - - meta
+      - name: description
+        content: Hướng dẫn Đăng nhập vào quản trị WordPress chỉ với một cú nhấp chuột
+---
+
+<script setup>
+import { data } from '../../.vitepress/config.data.ts'
+</script>
+
 # Magic Login: Đăng nhập vào các trang WordPress của bạn với tư cách là người dùng quản trị.
 
 **Magic Login** là một thuật ngữ dùng để mô tả một loại quy trình đăng nhập mang đến trải nghiệm xác thực liền mạch và dễ dàng cho người dùng.
