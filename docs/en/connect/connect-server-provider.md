@@ -82,8 +82,6 @@ import { data } from '../../.vitepress/config.data.ts'
 
 ## Amazon Lightsail
 
-**Note** Leave the permissions policies empty, we will configure it later
-
 1. Goto [IAM Console Create User](https://us-east-1.console.aws.amazon.com/iam/home#/users/create)
    ![](../../images/connect-server-provider/lightsail-create-user.png)
 2. Next to set permissions > `Click attach policy directly` > `Click Create Policy` a new tab open for you
