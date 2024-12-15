@@ -1,3 +1,15 @@
+---
+head:
+    - - meta
+      - name: description
+        content: Hướng dẫn cài đặt n8n website
+---
+
+<script setup>
+import { data } from '../../.vitepress/config.data.ts'
+import OgImage from '../../.vitepress/components/OgImage.vue'
+</script>
+
 # n8n
 
 ## 1-Click Cài đặt N8N
