@@ -155,6 +155,28 @@ For the configuration process to go smoothly, you need to prepare the following:
    ![](../../images/connect-onedrive.png)
 9. Click save to complete.
 
+## Backup to SFTP
+
+1. Go to <a :href="data.url + '/servers/'" target="_blank">server management page</a> and select the server to backup, then click on the `Backup tab save`
+2. Select SFTP
+   ![](../../images/docs/en/server/backup/backup-list.png)
+3. In the Config SFTP box, Enter your SFTP information.
+
+    ![](../../images/docs/en/server/backup/rclone-sftp-config.png)
+
+-   Memo box, enter a description to take notes
+-   Host: Enter SFTP IPv4 address or Domain name
+-   User: SFTP User to connect. Default (root)
+-   Port: SFTP port to connect. Default (22)
+
+    ![](../../images/docs/en/server/backup/rclone-sftp-config1.png)
+
+-   SSH Password: The password of User to connect
+
+    ![](../../images/docs/en/server/backup/rclone-sftp-config2.png)
+
+-   SSH Private Key & Passphrase: SFTP Authenticate using private key & passphrase (if it have)
+
 ## Backup configuration
 
 ![](../../images/backup/backup-configuration.png)
