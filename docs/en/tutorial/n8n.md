@@ -1,6 +1,29 @@
 # n8n
 
-## Setting
+## 1-Click Install N8N
+
+Step 1: Create a New Website
+
+Step 2: After the website is successfully created, click Manage to open the management interface.
+
+Step 3: Install N8N
+
+-   In the website management interface, find Install Source Code.
+-   Here, you will see the N8N option in the list.
+-   Click the N8N icon, then click the Install button.
+
+![install n8n](../../images/docs/vi/tutorial/n8n/oneclick-n8n.png)
+
+Step 4: Complete
+
+-   {{ data.name }} will automatically download and install the N8N source code.
+-   Once completed, you can access the website you just installed to start using N8N immediately.
+
+![n8n setup page](../../images/docs/vi/tutorial/n8n/oneclick-finished.png)
+
+With the One-Click Install feature, {{ data.name }} helps you deploy N8N quickly without spending a lot of time and effort. Try it now to take full advantage of the potential of this powerful monitoring tool!
+
+## Manual Setting
 
 1. Install [application](../server/application.md) `nodejs`
 2. Install [application](../server/application.md) `pm2`

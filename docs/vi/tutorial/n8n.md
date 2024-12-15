@@ -1,6 +1,29 @@
 # n8n
 
-## Cài đặt
+## 1-Click Cài đặt N8N
+
+Bước 1: Tạo một Website Mới
+
+Bước 2: Sau khi website được tạo thành công, nhấp vào Manage để mở giao diện quản lý.
+
+Bước 3: Cài đặt N8N
+
+-   Trong giao diện quản lý website, tìm mục Install Source Code.
+-   Tại đây, bạn sẽ thấy tùy chọn N8N trong danh sách.
+-   Nhấp vào biểu tượng N8N, sau đó bấm nút Install.
+
+![install n8n](../../images/docs/vi/tutorial/n8n/oneclick-n8n.png)
+
+Bước 4: Hoàn tất
+
+-   {{ data.name }} sẽ tự động tải và cài đặt mã nguồn N8N.
+-   Sau khi hoàn tất, bạn có thể truy cập vào website vừa cài đặt để bắt đầu sử dụng N8N ngay lập tức.
+
+![trang setup n8n](../../images/docs/vi/tutorial/n8n/oneclick-finished.png)
+
+Với tính năng One-Click Install, {{ data.name }} giúp bạn triển khai N8N nhanh chóng mà không cần tốn nhiều thời gian và công sức. Hãy trải nghiệm ngay để tận dụng tối đa tiềm năng của công cụ giám sát mạnh mẽ này!
+
+## Cài đặt thủ công
 
 1. Cài đặt [ứng dụng](../server/application.md) `nodejs`
 2. Cài đặt [ứng dụng](../server/application.md) `pm2`
