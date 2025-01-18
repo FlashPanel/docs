@@ -34,6 +34,22 @@ Bạn có thể tạo Singing Request tại tab `SSL` trên bảng quản lý tr
 Do quá trình gia hạn LetsEncrypt, không thể sao chép chứng chỉ LetsEncrypt sang các trang khác. Bạn chỉ cần cấp chứng chỉ LetsEncrypt mới cho trang web đó.
 :::
 
+## ZeroSSL
+
+Sử dụng tương tự như Let's Encrypt
+
+## **Cloudflare**
+
+{{ data.name }} hiện hỗ trợ tự động tạo **chứng chỉ SSL Cloudflare 15 năm** với khả năng kích hoạt liền mạch.
+
+Để thiết lập Cloudflare SSL:
+
+1. Đi tới trang **Quản lý trang web** và chọn tab **SSL**.
+2. Chọn nhà cung cấp SSL ưa thích của bạn từ danh sách (ví dụ: Let’s Encrypt, ZeroSSL, Cloudflare).
+3. Chọn **Cloudflare** và nhấp vào nút **Cài đặt** để tiếp tục.
+
+> **Lưu ý:** Bạn phải thêm **Khóa API Cloudflare** của mình vào {{ data.name }} để sử dụng tính năng này. Tham khảo tài liệu để biết hướng dẫn: [Kết nối nhà cung cấp DNS](../connect/connect-dns-provider.md).
+
 ## Create Signing Request (CSR)
 
 Create Signing Request là 1 đoạn text (chứa thông tin của chủ sở hữu tên miền) được mã hóa từ server (máy chủ) chuẩn bị cài đặt SSL. Nó chứa thông tin sẽ được bao gồm trong giấy chứng nhận của bạn như tên tổ chức của bạn, tên thông thường (tên miền), địa phương và quốc gia. 1 CSR sẽ được tạo ra ngay trước khi gửi yêu cầu cho bên cung cấp SSL để sinh ra SSL.
@@ -74,10 +90,16 @@ Bạn có thể dễ dàng sao chép 1 chứng chỉ từ chứng chỉ khác tr
 Đây là hướng dẫn sử dụng chứng chỉ Cloudflare 15 năm `miễn phí` nếu tên miền của bạn đang sử dụng dịch vụ Cloudflare, ưu điểm là không cần gia hạn mỗi 3 tháng như các chứng chỉ `LetsEncrypt` hoặc `ZeroSSL`
 :::
 
-1. Đầu tiên vào panel `Cloudflare`, tiếp đến chọn mục `SSL/TLS`. Tại đây chọn `SSL/TLS encryption mode` sang `Full` ![](<../../images/ssl/Screenshot 2024-03-24 at 10.39.57.png>)
-2. Tiếp theo chọn vào `Origin Server`, bấm `Create Certificate` ![](<../../images/ssl/Screenshot 2024-03-24 at 10.43.02.png>)
-3. Bấm `Create` để tạo ![](<../../images/ssl/Screenshot 2024-03-24 at 10.45.04.png>)
-   Lúc này ta sẽ có thông tin về chứng chỉ vừa tạo ![](<../../images/ssl/Screenshot 2024-03-24 at 10.46.38.png>)
-4. Quay lại `{{ data.name }}` > tab `SSL` > chọn `Install Existing Certificate` ![](<../../images/ssl/Screenshot 2024-03-24 at 10.49.08.png>)
-5. Sao chép mục ① và ② ở `bước 3` vào mục ① và ② tương ứng ![](<../../images/ssl/Screenshot 2024-03-24 at 10.49.38.png>)
+1. Đầu tiên vào panel `Cloudflare`, tiếp đến chọn mục `SSL/TLS`. Tại đây chọn `SSL/TLS encryption mode` sang `Full`
+   ![](<../../images/docs/en/site/ssl/Screenshot 2025-01-18 at 15.11.54.png>)
+2. Tiếp theo chọn vào `Origin Server`, bấm `Create Certificate`
+   ![](<../../images/ssl/Screenshot 2024-03-24 at 10.43.02.png>)
+3. Bấm `Create` để tạo
+   ![](<../../images/ssl/Screenshot 2024-03-24 at 10.45.04.png>)
+   Lúc này ta sẽ có thông tin về chứng chỉ vừa tạo
+   ![](<../../images/ssl/Screenshot 2024-03-24 at 10.46.38.png>)
+4. Quay lại `{{ data.name }}` > tab `SSL` > chọn `Install Existing Certificate`
+   ![](<../../images/ssl/Screenshot 2024-03-24 at 10.49.08.png>)
+5. Sao chép mục ① và ② ở `bước 3` vào mục ① và ② tương ứng
+   ![](<../../images/ssl/Screenshot 2024-03-24 at 10.49.38.png>)
 6. Bấm `Install Existing Certificate` là xong

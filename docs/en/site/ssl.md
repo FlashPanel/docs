@@ -17,7 +17,7 @@ import { data } from '../../.vitepress/config.data.ts'
 
 {{ data.name }} supports installing custom SSL certificates and using `LetsEncrypt`, `ZeroSSL` to generate free certificates for your websites.
 
-##LetsEncrypt
+## LetsEncrypt
 
 [LetsEncrypt](https://letsencrypt.org/) provides free SSL certificates recognized on all major browsers.
 
@@ -34,6 +34,24 @@ You can create a Singing Request at the `SSL` tab on {{ data.name }}'s website d
 ::: warning
 Due to the LetsEncrypt renewal process, LetsEncrypt certificates cannot be copied to other sites. You just need to issue a new LetsEncrypt certificate to that website.
 :::
+
+## ZeroSSL
+
+[ZeroSSL](https://zerossl.com/) is a free SSL certificate provider that provides free SSL certificates for all major browsers.
+
+Use same steps as LetsEncrypt
+
+## **Cloudflare**
+
+{{ data.name }} now supports automatic creation of **15-year Cloudflare SSL certificates** with seamless activation.
+
+To set up Cloudflare SSL:
+
+1. Go to the **Website Management** page and select the **SSL** tab.
+2. Choose your preferred SSL provider from the list (e.g., Let’s Encrypt, ZeroSSL, Cloudflare).
+3. Select **Cloudflare** and click the **Install** button to proceed.
+
+> **Note:** You must add your **Cloudflare API Key** to {{ data.name }} to use this feature. Refer to the documentation for instructions: [Connect DNS Provider](../connect/connect-dns-provider.md).
 
 ## Create Signing Request (CSR)
 
@@ -76,7 +94,7 @@ This is a guide to using a `free` 15-year Cloudflare certificate if your domain 
 :::
 
 1. First go to the `Cloudflare` panel, then select `SSL/TLS`. Here select `SSL/TLS encryption mode` to `Full`
-   ![](<../../images/ssl/Screenshot 2024-03-24 at 10.39.57.png>)
+   ![](<../../images/docs/en/site/ssl/Screenshot 2025-01-18 at 15.11.54.png>)
 2. Next select `Origin Server`, click `Create Certificate`
    ![](<../../images/ssl/Screenshot 2024-03-24 at 10.43.02.png>)
 3. Click `Create` to create
