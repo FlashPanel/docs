@@ -1,9 +1,9 @@
 ---
-title: "FlashPanel là gì?"
+title: "What is FlashPanel"
 head:
     - - meta
       - name: description
-        content: "FlashPanel là một dịch vụ quản lý máy chủ đám mây cho phép bạn duy trì toàn quyền kiểm soát các máy chủ của mình và triển khai, vận hành nhiều trang web với cấu hình nhanh chóng và dễ dàng."
+        content: "FlashPanel is a cloud server management service that allows you to maintain full control over your servers and deploy, operate multiple sites with quick and easy configuration."
 ---
 
 <script setup>
@@ -12,9 +12,9 @@ import { data } from '../.vitepress/config.data.ts'
 
 # What is {{ data.name }}?
 
-{{ data.name }} is a **cloud server management service** that allows you to maintain full control over your servers and deploy and operate multiple sites with quick configuration and easy.
+{{ data.name }} is a **cloud server management service** that allows you to maintain full control over your servers and deploy and operate multiple sites with quick and easy configuration.
 
-With {{ data.name }}, you don't need to be a Linux expert to deploy and operate your website, {{ data.name }} supports many domestic server providers ([** `123HOST`**](https://123host.vn/ "123HOST")) and foreign countries such as **`Vultr`**, **`DigitalOcean`**, **`Linode`**, ** `UpCloud`**, **`Hetzner`**, **`Google Cloud`**,... or your own server. {{ data.name }} supports all `PHP`, `NodeJS`, `Go`... web applications, including **`WordPress`**, **`WooCommerce`** and ** `Laravel`**.
+With {{ data.name }}, you don't need to be a Linux expert to deploy and operate your website. {{ data.name }} supports many domestic server providers ([**`123HOST`**](https://123host.vn/ "123HOST")) and foreign countries such as **`Vultr`**, **`DigitalOcean`**, **`Linode`**, **`UpCloud`**, **`Hetzner`**, **`Google Cloud`**, and even your own server. {{ data.name }} supports all `PHP`, `NodeJS`, `Go`... web applications, including **`WordPress`**, **`WooCommerce`**, and **`Laravel`**.
 
 Website: <a :href="data.url" target="_blank">{{ data.url }}</a>
 
@@ -24,9 +24,9 @@ Facebook Page: <a :href="data.fbPage">{{ data.fbPage }}</a>
 
 ## Find out more
 
-In addition to the documentation on this page, we also provide additional videos on our Youtube channel {{ data.name }} that further explain our services and provide additional knowledge about server administration.
+In addition to the documentation on this page, we also provide additional videos on our YouTube channel {{ data.name }} that further explain our services and offer additional knowledge about server administration.
 
-<a :href="data.youtube" target="_blank">Youtube {{ data.name }}</a>
+<a :href="data.youtube" target="_blank">YouTube {{ data.name }}</a>
 
 ## IP address {{ data.name }}
 
